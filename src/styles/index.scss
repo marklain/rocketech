@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 70%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 2;
+    }
+}
+
+.current-weather {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+
+    &__city {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    &__temperature {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.search-form {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+
+    &__input {
+        display: block;
+        width: 70%;
+        padding: 10px 15px;
+        text-align: center;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background-color: transparent;
+        box-shadow: 0 0 10px #fff;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    &__btn {
+        width: 20%;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        background-color: transparent;
+        box-shadow: 0 0 10px #fff;
+        font-size: 15px;
+        font-weight: 300;
+
+        &:active {
+            color: #000;
+            background-color: #fff;
+            box-shadow: 0 0 10px #fff;
+        }
+    }
+}
+.city-list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-wrap: wrap;
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px 0px;
+    &__item {
+        width: 25%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+.city-card {
+    box-shadow: 0px 0px 10px #fff;
+    padding: 15px;
+    position: relative;
+    border-radius: 15px;
+    &__name {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__weather {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__btn {
+        position: absolute;
+        padding: 5px;
+        width: 30px;
+        top: 1px;
+        right: 1px;
+        border-radius: 15px;
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #fff;
+    }
+}
