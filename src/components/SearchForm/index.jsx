@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class SearchForm extends Component {
+let input = null;
 
-    render() {
-        let input = null;
-        const { addCity } = this.props;
-        return (
+// Here is a SearchForm component. It's a form, where we put the name city, which we want. And send this information to API request. For get weather info for out CityCard ;)
+
+const SearchForm = ({ addCity }) =>(
             <form onSubmit={(e) => {
                 e.preventDefault();
                 addCity(input.value);
@@ -14,6 +14,11 @@ export default class SearchForm extends Component {
                 <button className="search-form__btn" type="submit">Search</button>
             </form>
         );
-    }
 
-}
+// Here is we write all PropTypes for our component.
+
+SearchForm.propTypes = {
+    addCity: PropTypes.func.isRequired
+};
+
+export default SearchForm;
