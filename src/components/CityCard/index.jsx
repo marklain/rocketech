@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Here is CityCard component. So it's a card of City which we will add from SearchForm input, and which we can delete by the "-" button
+// Here is CityCard component. So it's a card of City which we add from SearchForm input, and which we can delete by the "-" button.
+
 const CityCard = ({ name, tempToday, tempTomorrow, id, deleteFromList }) => (
             <div className="city-list__item">
                 <div className="city-card">
@@ -13,7 +14,7 @@ const CityCard = ({ name, tempToday, tempTomorrow, id, deleteFromList }) => (
             </div>
         );
 
-// Here is we write all PropTypes for our component.
+// Here we write all PropTypes for our component.
 
 CityCard.propTypes = {
     name: PropTypes.string.isRequired,

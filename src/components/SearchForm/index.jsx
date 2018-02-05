@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 let input = null;
 
-// Here is a SearchForm component. It's a form, where we put the name city, which we want. And send this information to API request. For get weather info for out CityCard ;)
+// Here is a SearchForm component. It's a form, where we put the city name, which we want. And send this information to API request, to get weather info for out CityCard ;)
 
 const SearchForm = ({ addCity }) =>(
             <form onSubmit={(e) => {
@@ -15,7 +15,7 @@ const SearchForm = ({ addCity }) =>(
             </form>
         );
 
-// Here is we write all PropTypes for our component.
+// Here we write all PropTypes for our component.
 
 SearchForm.propTypes = {
     addCity: PropTypes.func.isRequired

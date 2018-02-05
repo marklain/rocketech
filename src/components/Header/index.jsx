@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Here is Header component. It get current weather as props, from FETCH API, when APP did mount (you car read about it in App/index.jsx). So it's just a header, very simple :)
+// Here is a Header component. It gets current weather as prop, from FETCH API, when APP did mount (you can read about it in App/index.jsx). So it's just a header, very simple :)
 
 const Header = ({ currentWeather }) => (
             <header className="header">
@@ -13,7 +13,7 @@ const Header = ({ currentWeather }) => (
             </header>
         );
 
-// Here is we write all PropTypes for our component.
+// Here we write all PropTypes for our component.
 
 Header.propTypes = {
     currentWeather: PropTypes.string

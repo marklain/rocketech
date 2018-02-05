@@ -1,4 +1,4 @@
-// This is a main component which name is 'APP', it's a Class, because it have a State, other components are functional components, which haven't state and just get props and render HTML;
+// This is a main component which name is 'APP', it's a Class, because it has a State, other components are functional components, which don't haven a state and just get props and render HTML;
 
 // Import block
 
@@ -14,7 +14,7 @@ class App extends Component {
         cityWeatherList: []
     }
 
-    // when component did mount we will get cityWeaterList from localStorage and get user coordinates from obj navigator.coordinates
+    // when component did mount we get cityWeaterList from localStorage and get user coordinates from obj navigator.coordinates
 
     componentDidMount() {
         navigator.geolocation.getCurrentPosition(position => {
